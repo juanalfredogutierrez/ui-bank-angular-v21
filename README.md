@@ -1,59 +1,59 @@
-# MiAppAngular21
+# 🏦 Banking Frontend Platform
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.9.
+![Angular](https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)
+![Arquitectura](https://img.shields.io/badge/Arquitectura-Frontend%20Escalable-blue)
+![Testing](https://img.shields.io/badge/Testing-Vitest-success)
+![Estado](https://img.shields.io/badge/Estado-Listo%20para%20Producción-green)
 
-## Development server
+---
 
-To start a local development server, run:
+## 📌 Descripción general
 
-```bash
-ng serve
-```
+**Banking Frontend Platform** es una aplicación web moderna de nivel empresarial construida con Angular 21, diseñada para entornos de banca digital y operaciones financieras.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+La plataforma sigue principios de **arquitectura frontend escalable**, enfocada en rendimiento, mantenibilidad, seguridad y evolución a largo plazo dentro de un ecosistema fintech.
 
-## Code scaffolding
+Su objetivo es soportar flujos bancarios como dashboards financieros, gestión de clientes y operaciones transaccionales.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🧠 Principios de arquitectura
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+### 🧱 Arquitectura modular
+- Separación por dominios funcionales
+- Carga diferida (lazy loading)
+- Responsabilidades bien definidas por feature
 
-```bash
-ng generate --help
-```
+### ⚡ Enfoque en rendimiento
+- Builds optimizados para producción
+- Tree-shaking habilitado
+- Tamaño de bundle controlado
 
-## Building
+### 🔄 Diseño reactivo
+- Formularios reactivos
+- Manejo de estado con RxJS
+- Actualización de UI basada en eventos
 
-To build the project run:
+### 🧩 Escalabilidad
+- Preparado para micro-frontends
+- Arquitectura basada en dominios
+- Componentes reutilizables
 
-```bash
-ng build
-```
+### 🧪 Calidad de software
+- Testing unitario con Vitest
+- Aislamiento de componentes
+- Estructura lista para CI/CD
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 🏗️ Arquitectura de alto nivel
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```text
+Capa de UI (Componentes Angular)
+        ↓
+Capa de Features (Dominios de negocio)
+        ↓
+Capa de Servicios (Estado + comunicación API)
+        ↓
+Backend (.NET / Microservicios)
