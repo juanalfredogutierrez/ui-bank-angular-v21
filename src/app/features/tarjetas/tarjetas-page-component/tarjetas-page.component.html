@@ -1,0 +1,18 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Tarjetas</span>
+    <h1>Tarjetas activas</h1>
+    <p>Administra tus tarjetas, limites y saldos disponibles.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (card of cards(); track card.number) {
+      <article class="feature-card">
+        <small>{{ card.number }}</small>
+        <h2>{{ card.name }}</h2>
+        <p>Disponible</p>
+        <strong>{{ card.available }}</strong>
+      </article>
+    }
+  </section>
+</main>

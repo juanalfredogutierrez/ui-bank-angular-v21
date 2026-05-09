@@ -1,0 +1,17 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Clientes</span>
+    <h1>Directorio de clientes</h1>
+    <p>Consulta perfiles, segmentos y estado operativo de clientes frecuentes.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (client of clients(); track client.name) {
+      <article class="feature-card">
+        <small>{{ client.status }}</small>
+        <h2>{{ client.name }}</h2>
+        <p>{{ client.segment }}</p>
+      </article>
+    }
+  </section>
+</main>

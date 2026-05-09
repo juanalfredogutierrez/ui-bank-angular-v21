@@ -1,7 +1,5 @@
 import { Component, signal } from '@angular/core';
 
-import { SidebarComponent } from '../../../layout/sidebar-component/sidebar.component';
-import { TopbarComponent } from '../../../layout/topbar-component/topbar.component';
 import { BaseComponentsPanelComponent } from '../base-components-panel-component/base-components-panel.component';
 import { DistributionCardComponent } from '../distribution-card-component/distribution-card.component';
 import {
@@ -18,8 +16,6 @@ import { TransactionsListComponent } from '../transactions-list-component/transa
 @Component({
   selector: 'app-dashboard-page-component',
   imports: [
-    SidebarComponent,
-    TopbarComponent,
     SummaryCardComponent,
     TransactionsListComponent,
     DistributionCardComponent,

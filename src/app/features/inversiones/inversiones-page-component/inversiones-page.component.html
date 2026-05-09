@@ -1,0 +1,17 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Inversiones</span>
+    <h1>Portafolio de inversiones</h1>
+    <p>Controla rendimiento, balance y distribucion de tus productos de inversion.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (investment of investments(); track investment.product) {
+      <article class="feature-card">
+        <small>{{ investment.yield }}</small>
+        <h2>{{ investment.product }}</h2>
+        <strong>{{ investment.balance }}</strong>
+      </article>
+    }
+  </section>
+</main>

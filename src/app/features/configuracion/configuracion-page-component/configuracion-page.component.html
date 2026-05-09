@@ -1,0 +1,17 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Configuracion</span>
+    <h1>Preferencias del sistema</h1>
+    <p>Administra seguridad, notificaciones y opciones generales de la plataforma.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (setting of settings(); track setting.name) {
+      <article class="feature-card">
+        <small>Configurable</small>
+        <h2>{{ setting.name }}</h2>
+        <p>{{ setting.detail }}</p>
+      </article>
+    }
+  </section>
+</main>

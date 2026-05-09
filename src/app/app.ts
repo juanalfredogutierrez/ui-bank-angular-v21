@@ -1,10 +1,12 @@
 import { Component, signal } from '@angular/core';
+import { RouterOutlet } from '@angular/router';
 
-import { DashboardPageComponent } from './features/dashboard/dashboard-page-component/dashboard-page.component';
+import { SidebarComponent } from './layout/sidebar-component/sidebar.component';
+import { TopbarComponent } from './layout/topbar-component/topbar.component';
 
 @Component({
   selector: 'app-root',
-  imports: [DashboardPageComponent],
+  imports: [RouterOutlet, SidebarComponent, TopbarComponent],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })

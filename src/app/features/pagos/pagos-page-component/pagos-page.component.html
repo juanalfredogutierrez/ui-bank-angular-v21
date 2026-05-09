@@ -1,0 +1,17 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Pagos</span>
+    <h1>Pagos y servicios</h1>
+    <p>Visualiza tus pagos pendientes y mantén tus servicios al dia.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (payment of payments(); track payment.service) {
+      <article class="feature-card">
+        <small>{{ payment.due }}</small>
+        <h2>{{ payment.service }}</h2>
+        <strong>{{ payment.amount }}</strong>
+      </article>
+    }
+  </section>
+</main>

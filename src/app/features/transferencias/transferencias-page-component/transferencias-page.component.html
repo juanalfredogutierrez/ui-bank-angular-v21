@@ -1,0 +1,17 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Transferencias</span>
+    <h1>Centro de transferencias</h1>
+    <p>Opciones frecuentes para enviar dinero de forma rapida y organizada.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (transfer of transfers(); track transfer.title) {
+      <article class="feature-card">
+        <small>{{ transfer.amount }}</small>
+        <h2>{{ transfer.title }}</h2>
+        <p>{{ transfer.detail }}</p>
+      </article>
+    }
+  </section>
+</main>

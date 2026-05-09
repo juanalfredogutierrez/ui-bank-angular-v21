@@ -6,7 +6,12 @@
 
   <nav class="nav-menu" aria-label="Principal">
     @for (item of navigationItems(); track item.label) {
-      <a class="nav-item" [class.active]="item.active" href="#">
+      <a
+        class="nav-item"
+        [routerLink]="item.route"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: item.route === '/' }"
+      >
         <span class="icon">{{ item.icon }}</span>
         {{ item.label }}
       </a>

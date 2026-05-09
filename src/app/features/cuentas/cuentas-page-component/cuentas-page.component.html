@@ -1,0 +1,18 @@
+<main class="feature-page">
+  <section class="feature-header">
+    <span>Cuentas</span>
+    <h1>Gestion de cuentas</h1>
+    <p>Consulta saldos, estados y movimientos recientes de cada producto bancario.</p>
+  </section>
+
+  <section class="feature-grid">
+    @for (account of accounts(); track account.number) {
+      <article class="feature-card">
+        <small>{{ account.status }}</small>
+        <h2>{{ account.name }}</h2>
+        <p>{{ account.number }}</p>
+        <strong>{{ account.balance }}</strong>
+      </article>
+    }
+  </section>
+</main>
