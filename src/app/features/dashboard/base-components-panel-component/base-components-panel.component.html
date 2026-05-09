@@ -1,0 +1,74 @@
+<aside class="components-panel" aria-label="Componentes base">
+  <h2>COMPONENTES BASE</h2>
+
+  <section>
+    <h3>Botones</h3>
+    <div class="button-row">
+      <button class="btn primary">Primario</button>
+      <button class="btn secondary">Secundario</button>
+      <button class="btn tertiary">Terciario</button>
+    </div>
+  </section>
+
+  <section>
+    <h3>Inputs</h3>
+    <input class="field" type="text" placeholder="Texto de ejemplo" />
+    <input class="field" type="email" placeholder="Correo electronico" />
+    <label class="password-field">
+      <input type="password" placeholder="Contrasena" />
+      <span>◎</span>
+    </label>
+  </section>
+
+  <section>
+    <h3>Select</h3>
+    <select class="field">
+      <option>Seleccionar opcion</option>
+    </select>
+  </section>
+
+  <section>
+    <h3>Checkbox / Radio</h3>
+    <label class="choice"><input type="checkbox" checked /> Opcion seleccionada</label>
+    <label class="choice"><input type="radio" /> Opcion de radio</label>
+  </section>
+
+  <section>
+    <h3>Tarjeta</h3>
+    <div class="credit-card">
+      <span>Visa Clasica</span>
+      <small>**** 4567</small>
+      <em>Saldo disponible</em>
+      <strong>S/ 5,230.50 <b>VISA</b></strong>
+    </div>
+  </section>
+
+  <section>
+    <h3>Tabla</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Fecha</th>
+          <th>Descripcion</th>
+          <th>Monto</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (transaction of tableTransactions(); track transaction.date + transaction.description) {
+          <tr>
+            <td>{{ transaction.date }}</td>
+            <td>{{ transaction.description }}</td>
+            <td [class]="transaction.tone">{{ transaction.amount }}</td>
+          </tr>
+        }
+      </tbody>
+    </table>
+  </section>
+
+  <section>
+    <h3>Alertas</h3>
+    <p class="alert success">Operacion realizada con exito</p>
+    <p class="alert warning">Atencion: Revisa tu informacion</p>
+    <p class="alert error">Error al procesar la operacion</p>
+  </section>
+</aside>

@@ -1,0 +1,15 @@
+<aside class="sidebar">
+  <div class="brand">
+    <span class="brand-icon">🏛</span>
+    <span>BANCO</span>
+  </div>
+
+  <nav class="nav-menu" aria-label="Principal">
+    @for (item of navigationItems(); track item.label) {
+      <a class="nav-item" [class.active]="item.active" href="#">
+        <span class="icon">{{ item.icon }}</span>
+        {{ item.label }}
+      </a>
+    }
+  </nav>
+</aside>

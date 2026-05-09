@@ -43,6 +43,23 @@ a {
   text-decoration: none;
 }
 
+app-sidebar-component,
+app-topbar-component,
+app-summary-card-component,
+app-transactions-list-component,
+app-distribution-card-component,
+app-notifications-card-component,
+app-base-components-panel-component {
+  display: block;
+}
+
+app-sidebar-component,
+app-sidebar-component .sidebar,
+app-base-components-panel-component,
+app-base-components-panel-component .components-panel {
+  min-height: 100%;
+}
+
 .sr-only {
   position: absolute;
   width: 1px;
